@@ -1,9 +1,10 @@
 '''3.6 手書き文字認識'''
 %cd /Users/rukaoide/Library/Mobile Documents/com~apple~CloudDocs/Documents/Python/15_Zero_Making_Deeplearning
 import sys, os
-sys.path.append(os.pardir)
 import numpy as np
 import pickle
+# インポートしたいファイルのディレクトリ(os.pardir)をファイル検索パスのリスト(sys.path)に追加
+sys.path.append(os.pardir)
 from dataset.mnist import load_mnist
 from common.functions import sigmoid, softmax
 from PIL import Image
